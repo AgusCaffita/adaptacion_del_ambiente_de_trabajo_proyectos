@@ -6,42 +6,35 @@ using System.Threading.Tasks;
 
 namespace AdministracionSanatorio
 {
-    class Paciente
+    public class Paciente
     {
-        public int DNI;
-        public string nombre;
-        public string apellido;
-        public int telefono; 
+        public string dni;
+        public string nombreCompleto;
+        public string telefono; 
         public string obraSocial;
         public int cobertura;
-        List<Intervencion> intervenciones = new List<Intervencion>();
+        public List<Intervencion> Intervenciones { get; set; } = new List<Intervencion>();
 
-        public void Paciente(int dni, string name, string sname, int tel, string os)
+        public Paciente(string dni, string nombreCompleto, string telefono, string obraSocial, int cobertura)
         {
-            this.DNI = dni;
-            nombre = name;
-            apellido = sname;
-            telefono = tel;
-            obraSocial = os;
-            if(obraSocial == "OSDE")
+            this.dni = dni;
+            this.nombreCompleto = nombreCompleto;
+            this.telefono = telefono;
+            this.obraSocial = obraSocial;
+            this.cobertura = cobertura;     
+        }
+
+        public void agregarIntervencion(string complejidad, string codigo, string descripcion, string especialidad, int precio)
+        {
+            if(complejidad == "comun")
             {
-                cobertura = 80;
-            }else if(obraSocial == "Swiss Medical")
-            {
-                cobertura = 90;
-            }else if(obraSocial == "IAPOS")
-            {
-                cobertura = 70;
+                Intervenciones.Add(new IntervencionComun(codigo, descripcion, especialidad, precio));
             }
-
-           
-        }
-
-
-        public void agregarIntervencion()
-        {
-            intervenciones.Add(codigo);
-        }
+            else
+            {
+                Intervenciones.Add(new IntervencionAltaComplejidad(codigo, descripcion, especialidad, precio));
+            }
+        }  //NO SE QUE ONDA LO DEL PRECIO
 
         public void intervencionesNoPagas()
         {
@@ -49,3 +42,5 @@ namespace AdministracionSanatorio
         }
     }
 }
+//  Intervenciones.Add(new IntervencionAltaComplejidad("INT002", "Neurocirugía", "Neurología", 200000));
+// Intervenciones.Add(new IntervencionComun("INT001", "Bypass coronario", "Cardiología", 120000));

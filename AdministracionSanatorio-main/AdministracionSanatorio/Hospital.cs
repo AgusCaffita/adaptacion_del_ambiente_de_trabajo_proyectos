@@ -1,4 +1,12 @@
-public class Hospital
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdministracionSanatorio
+{
+    public class Hospital
 {
     public List<Doctor> Doctores { get; set; } = new List<Doctor>();
     public List<Paciente> Pacientes { get; set; } = new List<Paciente>();
@@ -37,3 +45,5 @@ public class Hospital
         Intervenciones.Add(new IntervencionAltaComplejidad("INT010", "Craneotomía", "Neurología", 270000));
     }
 }
+}
+
