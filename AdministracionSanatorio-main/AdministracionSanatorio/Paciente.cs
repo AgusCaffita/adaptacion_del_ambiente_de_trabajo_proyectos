@@ -8,20 +8,20 @@ namespace AdministracionSanatorio
 {
     public class Paciente
     {
-        public string dni;
-        public string nombreCompleto;
-        public string telefono; 
-        public string obraSocial;
-        public int cobertura;
+        public string Dni;
+        public string NombreCompleto;
+        public string Telefono; 
+        public string ObraSocial;
+        public int Cobertura;
         public List<Intervencion> Intervenciones { get; set; } = new List<Intervencion>();
 
         public Paciente(string dni, string nombreCompleto, string telefono, string obraSocial, int cobertura)
         {
-            this.dni = dni;
-            this.nombreCompleto = nombreCompleto;
-            this.telefono = telefono;
-            this.obraSocial = obraSocial;
-            this.cobertura = cobertura;     
+            Dni = dni;
+            NombreCompleto = nombreCompleto;
+            Telefono = telefono;
+            ObraSocial = obraSocial;
+            Cobertura = cobertura;     
         }
 
         public void agregarIntervencion(string complejidad, string codigo, string descripcion, string especialidad, int precio)
@@ -34,7 +34,17 @@ namespace AdministracionSanatorio
             {
                 Intervenciones.Add(new IntervencionAltaComplejidad(codigo, descripcion, especialidad, precio));
             }
-        }  //NO SE QUE ONDA LO DEL PRECIO
+        }
+
+        public void MostrarPaciente(Paciente p)
+        {
+            Console.WriteLine("DNI: " + p.Dni);
+            Console.WriteLine("Nombre: " + p.NombreCompleto);
+            Console.WriteLine("Teléfono: " + p.Telefono);
+            Console.WriteLine("Obra social: " + p.ObraSocial);
+            Console.WriteLine("Cobertura: " + p.Cobertura + "%");
+        }
+
 
         public void intervencionesNoPagas()
         {

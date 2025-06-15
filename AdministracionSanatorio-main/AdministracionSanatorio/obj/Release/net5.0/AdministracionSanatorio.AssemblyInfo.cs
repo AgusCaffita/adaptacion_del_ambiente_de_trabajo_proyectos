@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdministracionSanatorio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09fc4994f79fa724bdb347ed1c362a39ac35cfd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdministracionSanatorio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdministracionSanatorio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
