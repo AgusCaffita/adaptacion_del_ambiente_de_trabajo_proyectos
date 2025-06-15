@@ -15,7 +15,7 @@ namespace Cronometro
         public void IncrementarTiempo()
         {
             seg++;
-            if(seg == 60)
+            if (seg == 60)
             {
                 seg = 0;
                 min++;

@@ -26,12 +26,12 @@ namespace Semaforo
             {
                 tiempo += segundos;
 
-                while(tiempo >= 55)
+                while (tiempo >= 55)
                 {
                     tiempo = tiempo - 55;
                 }
 
-                if(colorActual == "Rojo")
+                if (colorActual == "Rojo")
                 {
                     if (tiempo > 30)
                     {
@@ -39,7 +39,7 @@ namespace Semaforo
                         tiempo = tiempo - 30;
                     }
                 }
-                if(colorActual == "Rojo-Amarillo")
+                if (colorActual == "Rojo-Amarillo")
                 {
                     if (tiempo > 2)
                     {
@@ -47,7 +47,7 @@ namespace Semaforo
                         tiempo = tiempo - 2;
                     }
                 }
-                if(colorActual == "Verde")
+                if (colorActual == "Verde")
                 {
                     if (tiempo > 20)
                     {
@@ -55,7 +55,7 @@ namespace Semaforo
                         tiempo = tiempo - 20;
                     }
                 }
-                if(colorActual == "Amarillo")
+                if (colorActual == "Amarillo")
                 {
                     if (tiempo > 2)
                     {

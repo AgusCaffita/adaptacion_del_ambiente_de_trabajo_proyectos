@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Cronometro\\Cronometro\\Cronometro.csproj": {}
+    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj": {}
   },
   "projects": {
-    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Cronometro\\Cronometro\\Cronometro.csproj": {
+    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Cronometro\\Cronometro\\Cronometro.csproj",
+        "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj",
         "projectName": "Cronometro",
-        "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Cronometro\\Cronometro\\Cronometro.csproj",
+        "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Cronometro\\Cronometro\\obj\\",
+        "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Usuario\\Descargas\\Vs shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +47,8 @@
         "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

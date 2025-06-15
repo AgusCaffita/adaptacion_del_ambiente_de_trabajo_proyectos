@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj",
-      "projectName": "Cronometro",
-      "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\Cronometro.csproj",
+      "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
+      "projectName": "CuentaBancaria",
+      "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Cronometro\\Cronometro\\obj\\",
+      "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Usuario\\Descargas\\Vs shared\\NuGetPackages"

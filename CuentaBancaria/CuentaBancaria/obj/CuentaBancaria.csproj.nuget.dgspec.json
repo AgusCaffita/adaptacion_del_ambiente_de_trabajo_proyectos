@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Semaforo\\Semaforo\\Semaforo.csproj": {}
+    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {}
   },
   "projects": {
-    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Semaforo\\Semaforo\\Semaforo.csproj": {
+    "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Semaforo\\Semaforo\\Semaforo.csproj",
-        "projectName": "Semaforo",
-        "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Semaforo\\Semaforo\\Semaforo.csproj",
+        "projectUniqueName": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
+        "projectName": "CuentaBancaria",
+        "projectPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\Semaforo\\Semaforo\\obj\\",
+        "outputPath": "E:\\Usuario\\Pictures\\Pictures\\Escuela\\6to\\C#\\Version 5.0\\CuentaBancaria\\CuentaBancaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Usuario\\Descargas\\Vs shared\\NuGetPackages"
