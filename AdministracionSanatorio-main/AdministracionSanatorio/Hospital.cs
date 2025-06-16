@@ -56,8 +56,38 @@ namespace AdministracionSanatorio
         {
             foreach (Paciente paciente in Pacientes)
             {
-                paciente.MostrarPaciente(paciente);
+                paciente.MostrarPaciente();
                 Console.WriteLine("\n");
+            }
+        }
+
+        public void agregarIntervencion(string documento)
+        {
+            Paciente pc = null;
+            foreach (Paciente paciente in Pacientes)
+            {
+                if (paciente.Dni == documento)
+                    pc = paciente;
+            }
+
+            if(pc == null)
+            {
+                Console.WriteLine("No hay paciente con ese documento, intente de nuevo");
+
+            }
+            else
+            {
+                Console.WriteLine("Ingrese complejidad de la intervencion");
+                string complejidad = Console.ReadLine();
+                Console.WriteLine("Ingrese codigo de la intervencion");
+                string codigo = Console.ReadLine();
+                Console.WriteLine("Ingrese descripcion de la intervencion");
+                string descripcion = Console.ReadLine();
+                Console.WriteLine("Ingrese especialidad de la intervencion");
+                string especialidad = Console.ReadLine();
+                Console.WriteLine("Ingrese precio de la intervencion");
+                int precio = int.Parse(Console.ReadLine());
+                pc.agregarIntervencion(complejidad, codigo, descripcion, especialidad, precio);
             }
         }
 

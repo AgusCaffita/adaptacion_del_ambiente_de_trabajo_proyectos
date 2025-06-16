@@ -29,21 +29,33 @@ namespace AdministracionSanatorio
             if(complejidad == "comun")
             {
                 Intervenciones.Add(new IntervencionComun(codigo, descripcion, especialidad, precio));
+
             }
-            else
+            else if(complejidad== "alta")
             {
                 Intervenciones.Add(new IntervencionAltaComplejidad(codigo, descripcion, especialidad, precio));
             }
+            else
+            {
+                Console.WriteLine("Complejidad no válida, intente de nuevo");
+            }
         }
 
-        public void MostrarPaciente(Paciente p)
+        public void MostrarPaciente()
         {
-            Console.WriteLine("DNI: " + p.Dni);
-            Console.WriteLine("Nombre: " + p.NombreCompleto);
-            Console.WriteLine("Teléfono: " + p.Telefono);
-            Console.WriteLine("Obra social: " + p.ObraSocial);
-            Console.WriteLine("Cobertura: " + p.Cobertura + "%");
+            Console.WriteLine("DNI: " + Dni);
+            Console.WriteLine("Nombre: " + NombreCompleto);
+            Console.WriteLine("Teléfono: " + Telefono);
+            Console.WriteLine("Obra social: " + ObraSocial);
+            Console.WriteLine("Cobertura: " + Cobertura + "%");
+            foreach(Intervencion inte in Intervenciones){
+                inte.MostrarIntervencion();
+                Console.WriteLine("\n");
+            }
+            
         }
+
+        
 
 
         public void intervencionesNoPagas()
@@ -52,5 +64,3 @@ namespace AdministracionSanatorio
         }
     }
 }
-//  Intervenciones.Add(new IntervencionAltaComplejidad("INT002", "Neurocirugía", "Neurología", 200000));
-// Intervenciones.Add(new IntervencionComun("INT001", "Bypass coronario", "Cardiología", 120000));

@@ -14,7 +14,7 @@ namespace AdministracionSanatorio
             while (bandera)
             {
                 Console.WriteLine("¿Que quiere hacer hoy?");
-                Console.WriteLine("presione: \n  1 para agregar paciente\n  2 para ver pacientes\n  3 para agregar intervencion\n  4 para calcular costo de una intervencion\n  5 para ver deudas de un paciente\n  6 para salir");
+                Console.WriteLine("presione: \n  1 para agregar paciente\n  2 para ver pacientes\n  3 para agregar intervencion a paciente\n  4 para calcular costo de una intervencion\n  5 para ver deudas de un paciente\n  6 para salir");
                 string input = Console.ReadLine();
                 int accion = int.Parse(input); 
                 switch (accion) {
@@ -35,14 +35,23 @@ namespace AdministracionSanatorio
                     case 2:
                         hospital.mostrarPacientes();
                         break;
+
                     case 3:
-                        Console.WriteLine("Se escribio " + accion);
+                        Console.WriteLine("Ingrese DNI del paciente");
+                        string documento = Console.ReadLine();
+                        hospital.agregarIntervencion(documento);
                         break;
+
                     case 4:
-                        Console.WriteLine("Se escribio " + accion);
+                        Console.WriteLine("Ingrese documento del paciente");
+                        string docu = Console.ReadLine();
+                        Console.WriteLine("Ingrese codigo de la operacion");
+                        string code = Console.ReadLine();
                         break;
+
                     default:
-                        Console.WriteLine($"{accion} No es una accion valida");
+                        Console.WriteLine("Hasta luego :)");
+                        bandera = false;
                         break;
                 }
              }       
