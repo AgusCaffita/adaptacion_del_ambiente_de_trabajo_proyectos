@@ -91,6 +91,44 @@ namespace AdministracionSanatorio
             }
         }
 
+
+        public void calcularCosto(string documento, string codigo)
+        {
+            Paciente paciente = null;
+            Intervencion intervencion = null;
+            foreach(Paciente pac in Pacientes)
+            {
+                if(pac.Dni == documento)
+                {
+                    paciente = pac;
+                }
+            }
+
+            if(paciente == null)
+            {
+                Console.WriteLine("No se ha encontrado paciente con ese documento");
+                return;
+            }
+
+            foreach (Intervencion inte in Intervenciones)
+            {
+                if (inte.Codigo == codigo)
+                {
+                    intervencion = inte;
+                }
+            }
+
+            if (intervencion == null)
+            {
+                Console.WriteLine("No se ha encontrado intervencion con ese codigo");
+                return;
+            }
+
+            decimal costo = 0;
+            costo = intervencion.Precio * (1 - (decimal)paciente.Cobertura / 100);
+
+            Console.WriteLine("El costo de la intervencion es: " + costo);
+        }
     }
 }
 

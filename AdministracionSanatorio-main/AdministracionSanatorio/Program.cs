@@ -47,11 +47,20 @@ namespace AdministracionSanatorio
                         string docu = Console.ReadLine();
                         Console.WriteLine("Ingrese codigo de la operacion");
                         string code = Console.ReadLine();
+                        hospital.calcularCosto(docu, code);
+                        break;
+
+                    case 5:
+                        Console.WriteLine("Escribiste 5");
+                        break; 
+
+                    case 6:
+                        Console.WriteLine("Hasta luego :)");
+                        bandera = false;
                         break;
 
                     default:
-                        Console.WriteLine("Hasta luego :)");
-                        bandera = false;
+                        Console.WriteLine($"{accion} no es un numero valido");
                         break;
                 }
              }       

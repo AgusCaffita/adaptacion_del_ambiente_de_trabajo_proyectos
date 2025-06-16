@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AdministracionSanatorio\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AdministracionSanatorio\\Hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Intervencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AdministracionSanatorio\\Intervencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Intervencion.cs",
+              "DocumentMoniker": "C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Intervencion.cs",
+              "RelativeDocumentMoniker": "AdministracionSanatorio\\Intervencion.cs",
+              "ToolTip": "C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Intervencion.cs",
+              "RelativeToolTip": "AdministracionSanatorio\\Intervencion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T21:33:32.726Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +45,22 @@
               "RelativeDocumentMoniker": "AdministracionSanatorio\\Program.cs",
               "ToolTip": "C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Program.cs",
               "RelativeToolTip": "AdministracionSanatorio\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T03:55:16.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hospital.cs",
+              "DocumentMoniker": "C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Hospital.cs",
+              "RelativeDocumentMoniker": "AdministracionSanatorio\\Hospital.cs",
+              "ToolTip": "C:\\Users\\agusc\\Desktop\\Code\\adaptacion_del_ambiente_de_trabajo_proyectos\\adaptacion_del_ambiente_de_trabajo_proyectos\\AdministracionSanatorio-main\\AdministracionSanatorio\\Hospital.cs",
+              "RelativeToolTip": "AdministracionSanatorio\\Hospital.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwGoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T21:26:58.152Z",
               "EditorCaption": ""
             }
           ]
