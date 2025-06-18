@@ -12,6 +12,7 @@ namespace AdministracionSanatorio
         public string Descripcion;
         public string Especialidad;
         public decimal Precio;
+
         public Intervencion(string codigo, string descripcion, string especialidad, int precio)
         {
             Codigo = codigo;
@@ -20,13 +21,6 @@ namespace AdministracionSanatorio
             Precio = precio;
         }
 
-        public void MostrarIntervencion()
-        {
-            Console.WriteLine("Codigo: " + Codigo);
-            Console.WriteLine("Descripcion: " + Descripcion);
-            Console.WriteLine("Especialidad: " + Especialidad);
-            Console.WriteLine("Precio: " + Precio);
-        }
     }
     
     public class IntervencionComun: Intervencion

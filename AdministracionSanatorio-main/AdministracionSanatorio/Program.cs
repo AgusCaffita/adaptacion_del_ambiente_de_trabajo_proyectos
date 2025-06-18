@@ -51,7 +51,9 @@ namespace AdministracionSanatorio
                         break;
 
                     case 5:
-                        Console.WriteLine("Escribiste 5");
+                        Console.WriteLine("Ingrese documento del paciente");
+                        string docum = Console.ReadLine();
+                        hospital.calcularDeuda(docum);
                         break; 
 
                     case 6:

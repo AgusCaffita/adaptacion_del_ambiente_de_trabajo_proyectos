@@ -8,10 +8,10 @@ namespace AdministracionSanatorio
 {
     public class Doctor
     {
-        string nombreCompleto;
-        string matricula;
-        string especialidad;
-        bool puedeIntervenir;
+        public string nombreCompleto;
+        public string matricula;
+        public string especialidad;
+        public bool puedeIntervenir;
 
         public Doctor(string nombreCompleto, string matricula, string especialidad, bool puedeIntervenir)
         {

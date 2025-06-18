@@ -10,10 +10,10 @@ namespace AdministracionSanatorio
     {
         public string Dni;
         public string NombreCompleto;
-        public string Telefono; 
+        public string Telefono;
         public string ObraSocial;
         public int Cobertura;
-        public List<Intervencion> Intervenciones { get; set; } = new List<Intervencion>();
+        public List<IntRealizadas> Intervenciones { get; set; } = new List<IntRealizadas>();
 
         public Paciente(string dni, string nombreCompleto, string telefono, string obraSocial, int cobertura)
         {
@@ -21,24 +21,12 @@ namespace AdministracionSanatorio
             NombreCompleto = nombreCompleto;
             Telefono = telefono;
             ObraSocial = obraSocial;
-            Cobertura = cobertura;     
+            Cobertura = cobertura;
         }
 
-        public void agregarIntervencion(string complejidad, string codigo, string descripcion, string especialidad, int precio)
+        public void agregarIntervencion(string fecha, Doctor doc,bool pago, string complejidad, string codigo, string descripcion, string especialidad, int precio)
         {
-            if(complejidad == "comun")
-            {
-                Intervenciones.Add(new IntervencionComun(codigo, descripcion, especialidad, precio));
-
-            }
-            else if(complejidad== "alta")
-            {
-                Intervenciones.Add(new IntervencionAltaComplejidad(codigo, descripcion, especialidad, precio));
-            }
-            else
-            {
-                Console.WriteLine("Complejidad no válida, intente de nuevo");
-            }
+            Intervenciones.Add(new IntRealizadas(fecha, doc, pago, complejidad, codigo, descripcion, especialidad, precio));
         }
 
         public void MostrarPaciente()
@@ -48,19 +36,30 @@ namespace AdministracionSanatorio
             Console.WriteLine("Teléfono: " + Telefono);
             Console.WriteLine("Obra social: " + ObraSocial);
             Console.WriteLine("Cobertura: " + Cobertura + "%");
-            foreach(Intervencion inte in Intervenciones){
+            foreach (IntRealizadas inte in Intervenciones)
+            {
                 inte.MostrarIntervencion();
                 Console.WriteLine("\n");
             }
-            
+
         }
 
-        
+
 
 
         public void intervencionesNoPagas()
         {
+            decimal porPagar = 0;
+            foreach(IntRealizadas intR in Intervenciones)
+            {
+                if(intR.Pago == false)
+                {
+                    Console.WriteLine("Id de operacion: " + intR.Id);
+                    porPagar += intR.Interv.Precio;
+                }
+            }
 
+            Console.WriteLine("Le faltan pagar (bruto) " + porPagar);
         }
     }
 }

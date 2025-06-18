@@ -87,7 +87,29 @@ namespace AdministracionSanatorio
                 string especialidad = Console.ReadLine();
                 Console.WriteLine("Ingrese precio de la intervencion");
                 int precio = int.Parse(Console.ReadLine());
-                pc.agregarIntervencion(complejidad, codigo, descripcion, especialidad, precio);
+                Console.WriteLine("Ingrese fecha de la intervencion");
+                string fecha = Console.ReadLine();
+                Console.WriteLine("Ingrese doctor de la intervencion (nombre completo");
+                string name = Console.ReadLine();
+                Doctor doc = null;
+                foreach(Doctor doct in Doctores)
+                {
+                    if(doct.nombreCompleto == name)
+                    {
+                        doc = doct;
+                    }
+                }
+                Console.WriteLine("Pagó la intervencion?");
+                bool pago = bool.Parse(Console.ReadLine());
+                if(doc == null)
+                {
+                    Console.WriteLine("No se encontro el doctor");
+                }
+                else
+                {
+                    pc.agregarIntervencion(fecha, doc, pago, complejidad, codigo, descripcion, especialidad, precio);
+                }
+
             }
         }
 
@@ -128,6 +150,27 @@ namespace AdministracionSanatorio
             costo = intervencion.Precio * (1 - (decimal)paciente.Cobertura / 100);
 
             Console.WriteLine("El costo de la intervencion es: " + costo);
+        }
+
+        public void calcularDeuda(string documento)
+        {
+            Paciente paciente = null;
+            
+            foreach (Paciente pac in Pacientes)
+            {
+                if (pac.Dni == documento)
+                {
+                    paciente = pac;
+                }
+            }
+
+            if (paciente == null)
+            {
+                Console.WriteLine("No se ha encontrado paciente con ese documento");
+                return;
+            }
+
+            paciente.intervencionesNoPagas();
         }
     }
 }
